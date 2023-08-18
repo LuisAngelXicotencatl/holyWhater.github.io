@@ -14,6 +14,8 @@
             <ul class="navbar-links">
                 <li><a href="#">Libros</a></li>
                 <li><a href="#">Perfil</a></li>
+                <button id="darkModeToggle">Modo Obscuro</button>
+                <script src="js/modoOscuro.js"></script>
             </ul>
         </nav>
         <div class="frase"><span id="fraseActual">Frase inicial</span><div class="autor"><p id="autorActual">Autor</p></div></div>
@@ -21,54 +23,122 @@
         <div class="top">
             <div class="perfil text-slide-in">
                 <div class="photo"><img id="perfil" src="images/fortada.jpg"></div>
-                <div class="name">Luis Angel Xicotencatl</div>
+                <div class="name-i">Luis Angel Xicotencatl</div>
             </div>
             <div class="perfil-notas text-slide-in">
                 <div class="books">
-                  <div class="name-books box-grow">Holly - Stephen King</div>
-                  <div class="name-books box-grow">Indigno de ser humano - Osamu Dazai</div>
-                  <div class="name-books box-grow">La sangre manda - Stephen King</div>
-                  <div class="name-books box-grow">Misery - Stephen King</div>
-                  <div class="name-books box-grow">Las rosas de mayo - Dot Hutchison</div>
-                  <div class="name-books box-grow">Tan poca vida - Hanya Yanagihara</div>
-                  <div class="name-books box-grow">Misery - Stephen King</div>
-                  <div class="name-books box-grow">Pedro paramo - Juan Rulfo</div>
-                  <div class="name-books box-grow">La senda del perdedor - Charles Bukowsy</div>
+                  <div class="name-books box-grow">Holly - Stephen King <button class="delete">x</button></div>
+                  <div class="name-books box-grow">Indigno de ser humano - Osamu Dazai <button class="delete">x</button></div>
+                  <div class="name-books box-grow">La sangre manda - Stephen King <button class="delete">x</button></div>
+                  <div class="name-books box-grow">Misery - Stephen King <button class="delete">x</button></div>
+                  <div class="name-books box-grow">Las rosas de mayo - Dot Hutchison <button class="delete">x</button></div>
+                  <div class="name-books box-grow">Tan poca vida - Hanya Yanagihara <button class="delete">x</button></div>
+                  <div class="name-books box-grow">Misery - Stephen King <button class="delete">x</button></div>
+                  <div class="name-books box-grow">Pedro paramo - Juan Rulfo <button class="delete">x</button></div>
+                  <div class="name-books box-grow">La senda del perdedor - Charles Bukowsy <button class="delete">x</button></div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="middle">
-    <h1 class="encabezado">Recomendados</h1>
-    <div class="carousel-container">
-        <div class="book-info object-slide-down" id="book1">
-           <div class="portada-book"><img id="portada-book" src="images/mercedes.jpg" alt="fortada del libro"></div>
-           <div class="name-book">Mr mercedes</div>
-           <div class="autor-book">Stephen king</div>
+    <section class="end">
+        <h1 class="encabezado">Publicaciones</h1>
+        <div class="feed">
+            <div class="perfil-feed">
+                <img id="photo" src="images/5.jpg" alt="fortada del libro">
+                <div class="name">Tadeo
+                </div>
+            </div>
+            <div class="atributes">
+                <div class="feed-title">
+                   Mr mercedes
+                </div>
+                <div class="feed-coment">
+                    Buen libro y excelente saga de Stephen king Un detective retirado es atormentado por un asesino en serie a través de una serie de cartas y correos electrónicos
+                </div>
+                <button id="feed-more">mas</button>
+            </div>
         </div>
-        <div class="book-info object-slide-down" id="book2">
-            <div class="portada-book"><img id="portada-book" src="images/quien.jpg" alt="fortada del libro"></div>
-            <div class="name-book">Quien pierde paga</div>
-            <div class="autor-book">Stephen king</div>
+        <div class="feed">
+            <div class="perfil-feed">
+                <img id="photo" src="images/4.jpg" alt="fortada del libro">
+                <div class="name">Sebastian
+                </div>
+            </div>
+            <div class="atributes">
+                <div class="feed-title">
+                   Quien pierde paga
+                </div>
+                <div class="feed-coment">
+                    Buen libro y excelente saga de Stephen king Un detective retirado es atormentado por un asesino en serie a través de una serie de cartas y correos electrónicos
+                </div>
+                <button id="feed-more">mas</button>
+            </div>
         </div>
-        <div class="book-info object-slide-down" id="book3">
-            <div class="portada-book"><img id="portada-book" src="images/51aBZfivTjL.jpg" alt="fortada del libro"></div>
-            <div class="name-book">Fin de guardia</div>
-            <div class="autor-book">Stephen king</div>
+        <div class="feed">
+            <div class="perfil-feed">
+                <img id="photo" src="images/1.jpg" alt="fortada del libro">
+                <div class="name">Tadeo
+                </div>
+            </div>
+            <div class="atributes">
+                <div class="feed-title">
+                   Fin de guardia
+                </div>
+                <div class="feed-coment">
+                    Buen libro y excelente saga de Stephen king Un detective retirado es atormentado por un asesino en serie a través de una serie de cartas y correos electrónicos
+                </div>
+                <button id="feed-more">mas</button>
+            </div>
         </div>
-        <script src="js/animacion-books.js"></script>
-        <script src="js/carrucel.js"></script>
-    </div>
-
-    <form action="" method="post">
-        <div class="buscar">
-          <input name="descripcion" id="descripcion" type="text" class="buscar_juego" placeholder="ingresa el nombre del libro">
-          <a class="presionar">
-            <i class="icon-buscar"></i>
-          </a>
-        </div> 
-    </form>
-    </div>
+        <div class="feed">
+            <div class="perfil-feed">
+                <img id="photo" src="images/mercedes.jpg" alt="fortada del libro">
+                <div class="name">Luis Angel
+                </div>
+            </div>
+            <div class="atributes">
+                <div class="feed-title">
+                   El visitante
+                </div>
+                <div class="feed-coment">
+                    Buen libro y excelente saga de Stephen king Un detective retirado es atormentado por un asesino en serie a través de una serie de cartas y correos electrónicos
+                </div>
+                <button id="feed-more">mas</button>
+            </div>
+        </div>
     </section>
+    <section class="middle">
+        <h1 class="encabezado">Recomendados</h1>
+        <div class="carousel-container">
+            <div class="book-info object-slide-down" id="book1">
+               <div class="portada-book"><img id="portada-book" src="images/mercedes.jpg" alt="fortada del libro"></div>
+               <div class="name-book">Mr mercedes</div>
+               <div class="autor-book">Stephen king</div>
+            </div>
+            <div class="book-info object-slide-down" id="book2">
+                <div class="portada-book"><img id="portada-book" src="images/quien.jpg" alt="fortada del libro"></div>
+                <div class="name-book">Quien pierde paga</div>
+                <div class="autor-book">Stephen king</div>
+            </div>
+            <div class="book-info object-slide-down" id="book3">
+                <div class="portada-book"><img id="portada-book" src="images/51aBZfivTjL.jpg" alt="fortada del libro"></div>
+                <div class="name-book">Fin de guardia</div>
+                <div class="autor-book">Stephen king</div>
+            </div>
+            <script src="js/animacion-books.js"></script>
+            <script src="js/carrucel.js"></script>
+        </div>
+    
+        <form action="" method="post">
+            <div class="buscar">
+              <input name="descripcion" id="descripcion" type="text" class="buscar_juego" placeholder="ingresa el nombre del libro">
+              <a class="presionar">
+                <i class="icon-buscar"></i>
+              </a>
+            </div> 
+        </form>
+        </div>
+        </section>
+    
 </body>
 </html>
